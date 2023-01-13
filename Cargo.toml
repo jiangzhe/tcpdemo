@@ -1,0 +1,28 @@
+[package]
+name = "tcpdemo"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "svr"
+path = "src/svr.rs"
+
+[[bin]]
+name = "cli"
+path = "src/cli.rs"
+
+[[bin]]
+name = "smolsvr"
+path = "src/smolsvr.rs"
+
+[[bin]]
+name = "smolcli"
+path = "src/smolcli.rs"
+
+[dependencies]
+smol = "1.3.0"
+tokio = {version = "1.24.1", features = ["full"]}
+
+[profile.release]
+debug = true
+

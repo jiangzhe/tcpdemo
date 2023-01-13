@@ -1,0 +1,6 @@
+/target
+perf.data*
+flamegraph.svg
+
+/go/gocli
+/go/gosvr
